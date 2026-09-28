@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillPath Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-shape shape-one"></div>
+    <div class="bg-shape shape-two"></div>
+    <div class="bg-shape shape-three"></div>
+    <div class="bg-shape shape-four"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">🚀 SkillPath</div>
+            <div class="nav-links">
+                <button id="logoutBtn" class="cta-button" style="padding: 0.7rem 1.1rem; font-size: 0.9rem;">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="careers" class="container fade-in" style="margin-top: 4rem;">
+            <h2>Generate Your Learning Roadmap</h2>
+            <p class="form-subtitle">Choose your skill level and field to get started</p>
+
+            <form id="roadmapForm" class="form-card">
+                <div class="form-group">
+                    <label for="name">👤 Enter Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">📊 Select Your Skill Level</label>
+                    <select id="level" required>
+                        <option value="">-- Choose Your Level --</option>
+                        <option value="Beginner">🟢 Beginner (No experience)</option>
+                        <option value="Intermediate">🟡 Intermediate (Some experience)</option>
+                        <option value="Advanced">🔴 Advanced (Experienced)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="field">💻 Select Your Interested Career Field</label>
+                    <select id="field" required>
+                        <option value="">-- Choose a Field --</option>
+                        <optgroup label="🌐 Web & Frontend">
+                            <option value="Web Development">Web Development</option>
+                            <option value="Frontend Developer">Frontend Engineering</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                        </optgroup>
+                        <optgroup label="📱 Mobile & App">
+                            <option value="App Development">App Development (Mobile)</option>
+                            <option value="Game Development">Game Development</option>
+                            <option value="Flutter Developer">Flutter Development</option>
+                        </optgroup>
+                        <optgroup label="🐍 Programming & Backend">
+                            <option value="Python Programming">Python Programming</option>
+                            <option value="Backend Developer">Backend Development</option>
+                            <option value="Full Stack Developer">Full Stack Development</option>
+                        </optgroup>
+                        <optgroup label="📊 Data & AI">
+                            <option value="Data Science">Data Science</option>
+                            <option value="Data Engineer">Data Engineering</option>
+                            <option value="AI / Machine Learning">AI & Machine Learning</option>
+                        </optgroup>
+                        <optgroup label="🔒 Security & DevOps">
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="DevOps">DevOps Engineering</option>
+                            <option value="Cloud Computing">Cloud Computing (AWS/GCP/Azure)</option>
+                        </optgroup>
+                        <optgroup label="🗄️ Database & Infrastructure">
+                            <option value="Database Management">Database Management</option>
+                            <option value="Networking">Networking</option>
+                        </optgroup>
+                        <optgroup label="🛠️ Support & Testing">
+                            <option value="IT Support">IT Support & Help Desk</option>
+                            <option value="QA Automation">QA & Test Automation</option>
+                        </optgroup>
+                        <optgroup label="⛓️ Emerging Tech">
+                            <option value="Blockchain">Blockchain Development</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    🚀 Generate My Roadmap
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 SkillPath | Professional IT Career Roadmap Generator</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillPath - Roadmap Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-shape shape-one"></div>
+    <div class="bg-shape shape-two"></div>
+
+    <header>
+        <h1>SkillPath 🚀</h1>
+        <p id="headerSubtitle">Your Personalized Roadmap</p>
+        
+        <div class="language-selector">
+            <label for="languageSelect" class="language-label">Change Language</label>
+            <select id="languageSelect" class="lang-select">
+                <option value="en" selected>English</option>
+                <option value="hinglish">Hinglish</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="result-page">
+        <section id="result" class="result result-card fade-in">
+            <h2 id="welcome"></h2>
+            <div id="roadmap"></div>
+            <div id="careerPaths"></div>
+            <button class="back-button" onclick="window.location.href='index.html'">Generate Another Roadmap</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SkillPath | Student Skill Roadmap Generator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
